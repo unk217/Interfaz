@@ -10,43 +10,38 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet"
 
-    <title></title>
   </head>
   <body style="background-color:#EEEEEE;">
     <div class="container">
-        <H2> <font face ="Trebuchet MS" color="red"></font> Nuevo paciente</H2>
+        <H2> <font face ="Trebuchet MS" color="black"></font> Nuevo paciente</H2>
        
         <form class="col-6">
-        <label>Nombre:</label>
-            <input type="text" class="form-control" id="nombre"/>
+        <label>Nombre</label>
+            <input type="text" class="form-control" id="name"/>
             <label>Apellido</label>
-            <input type="text" class="form-control" id=apellido/>
+            <input type="text" class="form-control" id=lastname/>
             <label>Fecha de nacimiento</label>
-            <input type="text" class="form-control" id=f.nacimiento/>
+            <input type="Date" class="form-control" id=fecha/>
           <div class="row mt-3"></div>
             <button style="background-color:#09cfae;" class="btn btn-sucess" id="add">Agregar</button>
         
         </form>
-        <div class="col-12 mt-3" id="pacientes">
-          <table class="table table-striped" id="lista">
+       <div class="col-12 mt-3" id="pacientes">
+          <table class="table table-striped" id="list">
             <tr>
-              <th>Nombres</th>
-              <th>Apellidos</th>
-              <th>Fecha de nacimiento</th>
-              <th>Edad</th>
+              <th>name</th>
+              <th>lastname</th>
+              <th>fecha</th>
+              <th>age</th>
             </tr>
           </table>
         </div>
-        <div class="col-10 text-right" id="resultado">
-          
-        </div>
-    </div>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="logic.js"></script>
 
-   
+    </div>
   </body>
 </html>
